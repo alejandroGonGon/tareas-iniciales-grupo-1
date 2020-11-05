@@ -2,7 +2,7 @@ GET http://localhost:3000/login
 
 ###
 
-GET  http://localhost:3000/login/devTe@gmail.com/passwd
+GET  http://localhost:3000/login/devTest@gmail.com/passwd
 
 ###
 
