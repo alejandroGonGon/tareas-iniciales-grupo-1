@@ -15,7 +15,7 @@ describe('User Model Test', () => {
         });
     });
 
-    it('create & save user successfully', async () => {
+    it('create and save user successfully', async () => {
         const validUser = new UserModel(userData);
         const savedUser = await validUser.save();
         // Object Id should be defined when successfully saved to MongoDB.
@@ -37,7 +37,7 @@ describe('User Model Test', () => {
     // Test Validation is working!!!
     // It should us told us the errors in on gender field.
     it('create user without required field should failed', async () => {
-        const userWithoutRequiredField = new UserModel({ email: 'fallo pls daleeee' });
+        const userWithoutRequiredField = new UserModel({ email: 'try.@gmail.com' });
         let err;
         try {
            await userWithoutRequiredField.save();
