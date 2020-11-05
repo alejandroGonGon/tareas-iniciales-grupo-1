@@ -9,7 +9,7 @@ async function getUser (req, res, next) {
     if (userSearch == null) {
       return res.status(404).json({ found: 'false' })
     } else {
-      return res.status(404).json({ found: 'true' })
+      return res.json({ email: userSearch.email, Rol: userSearch.userType })
     }
   } catch (err) {
     return res.status(500).json({ message: 'Server error' })
